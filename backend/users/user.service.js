@@ -14,29 +14,40 @@ module.exports = {
 };
 
 async function authenticate({ email, password }) {
-    const user = await User.findOne({ email });
-    if (user && bcrypt.compareSync(password, user.password)) {
-        const { password, ...userWithoutHash } = user.toObject();
-        const token = jwt.sign({ sub: user.id }, config.secret);
-        return {
-            ...userWithoutHash,
-            token
-        };
+    try {
+        const user = await User.findOne({email});
+        if (user && bcrypt.compareSync(password, user.password)) {
+            const {password, ...userWithoutHash} = user.toObject();
+            const token = jwt.sign({sub: user.id}, config.secret);
+            return {
+                ...userWithoutHash,
+                token
+            };
+        }
+    } catch (err) {
+        console.log(err);
+        throw err
     }
 }
 
 async function create(userParam) {
-    let result = await User.findOne({ email: userParam.email });
-
-    if (result) {
-        throw 'Username "' + userParam.email + '" is already taken';
+    try {
+        let result = await User.findOne({email: userParam.email});
+        if (result) {
+            throw 'Username "' + userParam.email + '" is already taken';
+        }
+        const user = new User(userParam);
+        if (userParam.password) {
+            user.password = bcrypt.hashSync(userParam.password, 10);
+        }
+        console.log(user);
+        let results = await user.save();
+        return !!results;
     }
-    const user = new User(userParam);
-    if (userParam.password) {
-        user.password = bcrypt.hashSync(userParam.password, 10);
+    catch (err) {
+        console.log(err);
+        throw err
     }
-    console.log(user);
-    await user.save();
 }
 
 async function generatePdfdata(data) {
@@ -47,5 +58,7 @@ async function generatePdfdata(data) {
 
     } catch (err) {
         console.log(err)
+        throw err
+
     }
 }
