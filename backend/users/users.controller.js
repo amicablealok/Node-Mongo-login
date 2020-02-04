@@ -5,6 +5,7 @@ const userService = require('./user.service');
 // routes
 router.post('/authenticate', authenticate);
 router.post('/register', register);
+router.post('/pdfData', generatePdfDatas);
 
 module.exports = router;
 
@@ -22,6 +23,17 @@ function register(req, res, next) {
     userService.create(req.body)
         .then(() => res.json({}))
         .catch(err => next(err));
+}
+
+async function generatePdfDatas(req, res, next) {
+    try {
+        let result = await userService.generatePdfdata();
+        console.log(result);
+        res.send({success : true ,result: result});
+    } catch (err) {
+        res.send({success : false ,result: ""});
+    }
+
 }
 
 
