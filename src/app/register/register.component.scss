@@ -1,0 +1,40 @@
+.tc_block{
+  text-align: center;
+  display: block;
+}
+.float-right {
+  float: right;
+}
+.float-center {
+  align-items: center;
+}
+.register {
+  //margin-top: -5%;
+  //padding: 4%;
+  width: 77%;
+}
+h4 {
+  text-align: center;
+}
+mat-card {
+  padding: 2%;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+  > div > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 20%;
+  }
+
+  .login-container {
+    flex-direction: column;
+
+    mat-form-field {
+      width: 100%;
+    }
+  }
+}
+

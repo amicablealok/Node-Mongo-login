@@ -1,0 +1,67 @@
+<mat-grid-list cols="2">
+  <mat-grid-tile>
+    <img src="../../assets/logo.png" alt="logo" width="650" height="355"/>
+  </mat-grid-tile>
+  <mat-grid-tile class = "register-block" style ="margin-top: -7% !important;" >
+    <mat-card class = "register">
+      <form  [formGroup]="user"  >
+      <div class="login-container">
+        <h4> Please Fill Your Details Here !!! </h4>
+        <br/>
+        <div>
+          <div>
+            <mat-form-field>
+              <input matInput placeholder="Enter your Name" formControlName="name"  required>
+              <mat-error *ngIf="user.get('name').invalid">{{getNameErrorMessage()}}</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Enter your email" formControlName="email"    required>
+              <mat-error *ngIf="user.get('email').invalid">{{getEmailErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput placeholder="Enter your Phone No" formControlName="phoneNo"    required  maxlength="10">
+              <mat-error *ngIf="user.get('phoneNo').invalid">{{getPhoneNoErrorMessage()}}</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Enter your password" formControlName="password"
+                     [type]="hide ? 'password' : 'text'">
+              <mat-error *ngIf="user.get('password').invalid">{{getPasswordErrorMessage()}}</mat-error>
+              <button mat-icon-button matSuffix (click)="hide = !hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+
+
+          </div>
+        </div>
+
+        <div>
+          <button mat-raised-button  color = "primary" class="float-right" (click) ="registerUser()" >
+            Submit
+          </button>
+        </div>
+        <div class="mt-3">
+          <mat-checkbox>Remember me!</mat-checkbox>
+
+        </div>
+        <br/>
+        <div class="mt-3" style ="float: left; position: absolute;">
+          <span>
+            Already have an account ?
+            <a  routerLink="/login"> Login</a>
+          </span>
+
+        </div>
+        <br/>
+        <br/>
+        <div class="tc_block">
+          <span>By clicking Sign In, you agree to our <a href="http://www.abc.com">Terms of Use</a> and our <a href="http://www.abc.com">Privacy Policy</a>.</span></div>
+      </div>
+      </form>
+    </mat-card>
+
+  </mat-grid-tile>
+</mat-grid-list>
+

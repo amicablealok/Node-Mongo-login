@@ -1,0 +1,36 @@
+
+<div class = "Container">
+    <div class = "part-one" style = "display: flex; width :60% ;height : 40%" >
+        <div style = "flex :3"></div>
+        <div [chart]="chart" style = "flex : 5 "></div>
+    </div>
+    <div>
+        <div class = "container-part-one" >
+            <mat-card style = "margin : auto; width : 50%  ;height :20%" >
+                <h2> Please Uplaod The File Here ! </h2>
+                <div >
+                    <div class="avatar-edit"  style >
+                        <input type="file" id="imageUpload" accept="image/*"  />
+                    </div>
+                    <br/>
+                    <button mat-raised-button color="primary" >  Submit </button>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    <br/>
+    <div>
+        <mat-card style = "width :70%; margin: auto">
+            <mat-card-title style = "text-align: center">
+                This is Content Of Uploaded File
+            </mat-card-title>
+            <br/>
+            <mat-card-content>
+                 {{data}}
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+</div>
+
+

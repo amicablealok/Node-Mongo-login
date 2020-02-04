@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7bc90429-7af2-4017-bc6d-916c57924748" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../frondend/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frondend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frondend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frondend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frondend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frondend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frondend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frondend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frondend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frondend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frondend/src/styles.css" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../frondend" />
+  </component>
+  <component name="ProjectId" id="1XIibleagX2kLiOABRA1vaImwHt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frondend" />
+    <property name="ts.external.directory.path" value="D:\frondend\node_modules\typescript\lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7bc90429-7af2-4017-bc6d-916c57924748" name="Default Changelist" comment="" />
+      <created>1580740082114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580740082114</updated>
+      <workItem from="1580740083477" duration="1056000" />
+      <workItem from="1580743472649" duration="1359000" />
+      <workItem from="1580745689368" duration="896000" />
+      <workItem from="1580749448399" duration="1619000" />
+      <workItem from="1580751247070" duration="1784000" />
+      <workItem from="1580753058868" duration="1791000" />
+      <workItem from="1580754938461" duration="1799000" />
+      <workItem from="1580756769224" duration="1814000" />
+      <workItem from="1580758620683" duration="1785000" />
+      <workItem from="1580760434647" duration="1790000" />
+      <workItem from="1580762610650" duration="211000" />
+      <workItem from="1580785788453" duration="878000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
